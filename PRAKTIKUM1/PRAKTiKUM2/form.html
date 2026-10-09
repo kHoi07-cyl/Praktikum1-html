@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta nama="viewport" content="widht=device-width, initial-scale=1,0">
+        <tittle>Document</tittle>
+    </head>
+    <body>
+
+        <h1>form pemesanan pizza</h1>
+        <p>
+            silahkan isi form pemesanan ini dengan lengkap dan benar.
+        </p>
+
+        <form action="https://www.blackgoosebistro.com/pizza.php" method="post">
+            <fieldset>
+            <legend>informasi pemesanan</legend>
+            <p>
+                <lebel for="customername">Nama:</lebel>
+                <input type="text" id="customername" name="customername" requider>
+            </p>
+            <p>
+                <lebel for="address">Address:</lebel>
+                <input type="text" id="address" name="address" requider>
+            </p>
+            <p>
+                <lebel for="telephone">Telephone:</lebel>
+                <input type="text" id="telephone" name="telephone" requider>
+            </p>
+            <p>
+                <lebel for="email">Email:</lebel>
+                <input type="text" id="email" name="email" requider>
+            </p>
+            <p>
+                <lebel for="intruction">delivery instruction</lebel><br>
+                <textarea
+                    id="instruction"
+                    name="instruction"
+                    rows="4"
+                    cols="50"
+                    maxlength="400"
+                    placeholder="no more than 400 characters"></textarea>
+            </p>
+            </fieldset>
+
+            <fieldset>
+                <legend>design your dream pizza</legend>
+                <p><strong>pizza specs</strong></p>
+                <p>pilih salah satu</p>
+
+                <p>
+                   <input type="radio" id="daging" name="topping" value="daging" required>
+                   <label for="daging">red sauce</label><br>
+
+                   <input type="radio" id="peperoni" name="topping" value="peperoni" required>
+                   <label for="peperoni">peperoni</label><br>
+
+                   <input type="radio" id="ayam" name="topping" value="ayam" required>
+                   <label for="ayam">ayam</label><br>
+
+                   <input type="radio" id="classic" name="topping" value="classic white">
+                   <label for="classic">tomato sauce</label><br>
+
+                   <input type="radio" id="classic" name="crust" value="classic white">
+                   <label for="classic">Mozarella</label><br>
+
+                   <input type="radio" id="classic" name="crust" value="classic white">
+                   <label for="classic">classic white</label><br>
+
+                   <input type="radio" id="classic" name="crust" value="classic white">
+                   <label for="classic">classic white</label><br>
+                </p>
+
+                <p><strong>topping</strong></p>
+
+                <p>
+                    <input type="radio" id="classic" name="crust" value="classic white">
+                   <label for="classic">classic white</label><br>
+
+                   <input type="radio" id="classic" name="crust" value="classic white">
+                   <label for="classic">classic white</label><br>
+
+                   <input type="radio" id="classic" name="crust" value="classic white">
+                   <label for="classic">classic white</label><br>
+                </p>
+
+                <p>
+                    <label for="quantity">quantity:</label>
+                    <select id="quantity" name="quantity" required>
+                        <option value="">--pilih jumlah--</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                    </select>
+                </p>
+            </fieldset>
+
+            <p>
+                <input type="submit" value="submit">
+                <input type="reset" value="reset">
+            </p>
+        </form>
+    </body>
+</html>
